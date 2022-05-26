@@ -15,11 +15,11 @@ public class Main {
 			//변수 sc에 입력된 명령을 문자형 변수 cmd에 저장함
 			//변수 cmd에 저장된 명령을 출력
 			if (cmd.equals("exit")) {//조건: cmd에 입력된 명령어가 exit일 때 true
-				break;
+				break; //exit 명령어가 입력되면 while 반복문을 종료시킴
 			}
 			System.out.printf("입력된 명령어 : %s\n", cmd);
 		}
-		System.out.println("=== 프로그램 종료 ===");
-		sc.close();
+		System.out.println("=== 프로그램 종료 ==="); //프로그램 종료 텍스트 출력
+		sc.close(); //scanner 입력 종료 메서드
 	}
 }
