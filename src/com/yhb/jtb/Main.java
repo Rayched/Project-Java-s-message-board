@@ -15,9 +15,11 @@ public class Main {
 			//변수 sc에 입력된 명령을 문자형 변수 cmd에 저장함
 			//변수 cmd에 저장된 명령을 출력
 			if (cmd.equals("exit")) {//조건: cmd에 입력된 명령어가 exit일 때 true
-				System.out.println("=== 프로그램 종료 ===");
-				sc.close();
+				break;
 			}
+			System.out.printf("입력된 명령어 : %s\n", cmd);
 		}
+		System.out.println("=== 프로그램 종료 ===");
+		sc.close();
 	}
 }
